@@ -2,12 +2,18 @@
 
 This is a Code to compute the XOR of two variables X1 and X2 and stores the result in Y.
 XOR Function
+
 X +Y ----> X xor Y
+
 0 + 0 ------> 0
+
 0 + 1 ------> 1
+
 1 + 0------> 1
+
 1 + 1 -----> 0
-XOR is a simple function which returns a truth value if the number of input bits true is odd. The following code is a simple Neural Network Classifier, works on the principle of Logistic regression in Machine Learning to perform the task.
+
+  XOR is a simple function which returns a truth value if the number of input bits true is odd. The following code is a simple Neural Network Classifier, works on the principle of Logistic regression in Machine Learning to perform the task.
 It makes the use of torch, the machine learning library in python. The data is stored in the form of a tensor array.
 A new model is created inside the class XOR(inbuilt). This comprises 2 inputs in the first layer,2 activation bubbles in the hidden layer, and a single output. An object 'self' is made of the class XOR. This will contain all the data we are working upon.
 The algorithm calculates the activation of a layer of the neurons as
