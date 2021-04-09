@@ -35,3 +35,6 @@ For this action, the MSELoss() function is used. A function 'forward' is used to
 
 It was found that the loss sufficiently converges to zero after 500 iterations of the model. A limiting value is achieved.
 Besides this,an optimizer function SGD(){Stochastic Gradient Descent} is used to speed up the gradient descent. This function updates parameters corresponding to each training example of the matrix instead of multiplying the entire gradient matrix by a single value and hence speeds up the convergence of the Cost Function. The learning rate is set to a small value.
+
+https://colab.research.google.com/drive/1J-Jz7d8ecWQyNshBKZ2oTv6JQSbTFRus?usp=sharing
+
