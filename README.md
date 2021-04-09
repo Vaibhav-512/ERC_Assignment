@@ -18,18 +18,18 @@ It makes the use of torch, the machine learning library in python. The data is s
 A new model is created inside the class XOR(inbuilt). This comprises 2 inputs in the first layer,2 activation bubbles in the hidden layer, and a single output. An object 'self' is made of the class XOR. This will contain all the data we are working upon.
 The algorithm calculates the activation of a layer of the neurons as
 
-                     aL=g(zL)
+                                      aL=g(zL)
 where aL is the activation of the Lth layer (essentially a vector).zL is computed as follows:
  
-                  zL = aL-1* wL-1+bL-1  
+                                 zL = aL-1* wL-1+bL-1  
 aL-1 is the activation vector/input vector of the previous layer and wL is a matrix that contains the weights/parameters we need to vary.bL-1 are the biases for the L-1 th layer. g is the sigmoid function that works on zL-1.
   
-                              g(x)= 1/{1+e^{-x}
+                                   g(x)= 1/{1+e^{-x}
 
 
 This function gives an output in the range (0,1) and essentially is used for scaling the features. The weights are first selected randomly for the input layer. The cost (loss) function is evaluated to get the mean squared error i.e, the square of the deviation of the hypothesis from the expected value
 
-                         Loss(zL,yL)=sum(g(zL)-yL)^2
+                               Loss(zL,yL)=sum(g(zL)-yL)^2
 
 For this action, the MSELoss() function is used. A function 'forward' is used to feed forward the cost and the predicted value in the Lth layer. Another function backward() back propagates to update the value of the weights and biases of the previous layers so that the Cost Function of the final layer converges into a minimum.
 
